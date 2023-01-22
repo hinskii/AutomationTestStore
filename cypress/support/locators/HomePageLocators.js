@@ -18,7 +18,12 @@ const homePageLocators = {
     menuCategoriesNames: ".categorymenu > li > a",
     menuApparelCategories: ".subnav > ul > li:nth-of-type(2) > .subcategories > ul  > li > a",
     menuHomeOptions: 'ul#main_menu  > li > a',
-    makeUp: '.subnav > ul > li:nth-of-type(3) > a'
+    makeUp: '.subnav > ul > li:nth-of-type(3) > a',
+    addProductToCard: '.thumbnail .pricetag .productcart',
+    productNewPrice: '.pricenew',
+    basketIcon: '.quick_basket',
+    cartPrice: '.cart_total'
+    
 }
 
 export {homePageLocators}

@@ -1,22 +1,18 @@
 /// <reference types="Cypress" />
-import { HomePagePO } from "../../support/pages/HomePage"
+import { HomePagePO } from "../../support/pages/HomePage";
 
-describe('Search box tests in home page', () => {
-    const homePage = new HomePagePO();
+describe("Search box tests in home page", () => {
+  const homePage = new HomePagePO();
 
-    beforeEach(() => {
-        homePage.visitHomePage()    
-    })
+  beforeEach(() => {
+    homePage.visitHomePage();
+  });
 
-    it('Checking if categories in search bar are changing', () => {
-        homePage.searchCategories()
-    });
+  it("Checking if categories in search bar are changing", () => {
+    homePage.searchCategories();
+  });
 
-    it('Searching product with search box', () => {
-        homePage.searchWithSelectedCategoryAndText()
-    });
-
-
-
-
-})
+  it("Searching product with search box", () => {
+    homePage.searchWithSelectedCategoryAndText();
+  });
+});

@@ -9,6 +9,6 @@ describe("Main menu tests in home page", () => {
   });
 
   it.only("Moving through whole main menu and check its guiding us to good categories ", () => {
-    homePage.mainNavigationIteration();
+    homePage.addProductToCardFromHomePage();
   });
 });

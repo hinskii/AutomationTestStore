@@ -1,0 +1,26 @@
+{
+  "name": "automation-test-store",
+  "version": "1.0.0",
+  "description": "Here are automation tests for automationteststore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinskii/AutomationTestStore.git"
+  },
+  "keywords": [
+    "cypress",
+    "automationteststore"
+  ],
+  "author": "Mateusz Darmetko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hinskii/AutomationTestStore/issues"
+  },
+  "homepage": "https://github.com/hinskii/AutomationTestStore#readme",
+  "dependencies": {
+    "cypress": "^12.3.0"
+  }
+}

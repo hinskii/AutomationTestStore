@@ -1,7 +1,7 @@
 const homePageLocators = {
     logo: ".header-logo",
     logInRegister: 'ul#customer_menu_top  a',
-    mainMenu: "a[href*='product/category&path=']",
+    mainMenu: ".categorymenu li",
     changeCurrency: ".currency a[href*='index/home&currency=']",
     currencyBtnSymbol: '.language .label-orange',
     price: '.oneprice',
@@ -13,7 +13,12 @@ const homePageLocators = {
     selectedCategory: '#category_selected',
     searchBox: '#filter_keyword',
     searchKeyword: '#keyword',
-    productName: '.prdocutname'
+    productName: ".prdocutname",
+    mainMenu: ".categorymenu > li > a",
+    menuCategoriesNames: ".categorymenu > li > a",
+    menuApparelCategories: ".subnav > ul > li:nth-of-type(2) > .subcategories > ul  > li > a",
+    menuHomeOptions: 'ul#main_menu  > li > a',
+    makeUp: '.subnav > ul > li:nth-of-type(3) > a'
 }
 
 export {homePageLocators}

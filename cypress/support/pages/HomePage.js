@@ -71,12 +71,32 @@ class HomePagePO {
         .type(data.searchData)
         .type('{enter}')
         cy.get(homePageLocators.searchKeyword).should('have.value', data.searchData)
-        cy.get(homePageLocators.productName).each($el =>{
+        cy.get(homePageLocators.productName).each($el => {
             cy.wrap($el.text()).should('include', data.searchData)
         })
 
     }
 
+    categoriesInApparelNav() {
+        cy.get(homePageLocators.menuApparelCategories).next()
+        .each(($el, index) => {
+            cy.get(homePageLocators.menuApparelCategories).eq(index).click({force:true});
+            
+            
+        })
+            
+        
+    }
+
+    mainNavigationIteration() {
+       cy.get(homePageLocators.mainMenu).each(($el, index) => {
+        cy.get(homePageLocators.header).each($el2 => {
+            cy.wrap($el2.text()).should('include', $el2.text())
+            cy.get(homePageLocators.mainMenu).eq(index).click({force:true})
+        })
+        
+       })
+    }
 }
 
 export {HomePagePO}

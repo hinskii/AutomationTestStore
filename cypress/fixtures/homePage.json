@@ -1,0 +1,12 @@
+{
+    "poundSymbol": "£",
+    "euroSymbol": "€",
+    "dolarSymbol": "$",
+    "poundText": "Pound Sterling",
+    "dolarText": "US Dollar",
+    "euroText": "Euro",
+    "pound": "GBP",
+    "euro": "EUR",
+    "dolar": "USD"
+}
+

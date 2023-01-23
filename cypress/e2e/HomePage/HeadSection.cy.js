@@ -1,14 +1,14 @@
 /// <reference types="Cypress" />
-import { HomePagePO } from "../../support/pages/HomePage"
+import { HomePageHead } from "../../support/pages/HomePagePO/HomePageHead";
 
 
 
 describe('Head section categories tests in home page', () => {
-const homePage = new HomePagePO();
+const homePage = new HomePageHead();
 
 
 beforeEach(() => {
-    homePage.visitHomePage()    
+    cy.visitHomePage() 
 })
 
 it ('Navigating to log in or register form from home page', () => {

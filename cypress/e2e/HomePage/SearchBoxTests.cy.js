@@ -1,11 +1,11 @@
 /// <reference types="Cypress" />
-import { HomePagePO } from "../../support/pages/HomePage";
+import { HomePageSearch } from "../../support/pages/HomePagePO/HomePageSearch";
 
 describe("Search box tests in home page", () => {
-  const homePage = new HomePagePO();
+  const homePage = new HomePageSearch();
 
   beforeEach(() => {
-    homePage.visitHomePage();
+    cy.visitHomePage()
   });
 
   it("Checking if categories in search bar are changing", () => {

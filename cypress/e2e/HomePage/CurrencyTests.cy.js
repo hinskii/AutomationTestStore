@@ -1,11 +1,11 @@
 /// <reference types="Cypress" />
-import { HomePagePO } from "../../support/pages/HomePage";
+import { HomePageCurrency } from "../../support/pages/HomePagePO/HomePageCurrency";
 
 describe("Changing currency tests in home page", () => {
-  const homePage = new HomePagePO();
+  const homePage = new HomePageCurrency();
 
   beforeEach(() => {
-    homePage.visitHomePage();
+    cy.visitHomePage()
   });
 
   it("Checking that currency is changing to GBP correctly", () => {

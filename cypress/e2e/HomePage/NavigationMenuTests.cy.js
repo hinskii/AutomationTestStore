@@ -1,11 +1,11 @@
 /// <reference types="Cypress" />
-import { HomePagePO } from "../../support/pages/HomePage";
+import { HomePageNavigation } from "../../support/pages/HomePagePO/HomePageNavigation";
 
 describe("Main menu tests in home page", () => {
-  const homePage = new HomePagePO();
+  const homePage = new HomePageNavigation();
 
   beforeEach(() => {
-    homePage.visitHomePage();
+    cy.visitHomePage()
   });
 
   it.only("Moving through whole main menu and check its guiding us to good categories ", () => {

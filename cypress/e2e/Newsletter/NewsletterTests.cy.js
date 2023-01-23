@@ -13,19 +13,19 @@ describe('Newsletter tests', () => {
         newsletter.newsletterPass()
       });
 
-      it('Newsletter subscription failed - bad email format', () => {
+      it('Newsletter subscription should fail - bad email format', () => {
         newsletter.newsletterFailedEmail()
       });
 
-      it('Newsletter subscription failed - nothing filled', () => {
+      it('Newsletter subscription should fail - nothing filled', () => {
         newsletter.newsletterNothingFilled()
       });
 
-      it('Newsletter subscription failed - first name input is not filled', () => {
+      it('Newsletter subscription should fail - first name input is not filled', () => {
         newsletter.newsletterFailedFirstName()
       })
 
-      it('Newsletter subscription failed - last name input is not filled', () => {
+      it('Newsletter subscription should fail - last name input is not filled', () => {
         newsletter.newsletterFailedLastName()
       })
 

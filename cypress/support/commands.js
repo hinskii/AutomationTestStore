@@ -1,5 +1,6 @@
 /// will work only for homePage tests
 import { newsletterLocators } from "./locators/NewsletterLocators";
+import { logInLocators } from "./locators/LoginLocators";
 
 
 Cypress.Commands.add("visitHomePage", () => {
@@ -9,6 +10,12 @@ Cypress.Commands.add("visitHomePage", () => {
   cy.visit("/");
 });
 
+//visit account panel
+Cypress.Commands.add('visitAccountPanel', () => {
+  cy.visit('/index.php?rt=account/account')
+})
+
+
 // will work only for newsletter tests
 Cypress.Commands.add("visitNewsletter", () => {
   cy.visit(
@@ -16,10 +23,56 @@ Cypress.Commands.add("visitNewsletter", () => {
   );
 });
 
+
+
+
+// session
+Cypress.Commands.add('logInSession', () => {
+  cy.session('logIn', () => {
+    cy.visit("/index.php?rt=account/login")
+    cy.get(logInLocators.loginName).type("Jadyn_Konopelski")
+    cy.get(logInLocators.password).type('test12345!')
+    cy.get(logInLocators.logInBtn).click()
+  })
+})
+
+
+
+
 //visit register section
 Cypress.Commands.add('visitRegister', () =>{
   cy.visit('index.php?rt=account/create')
 })
+
+
+
+
+
+//visit log in section
+Cypress.Commands.add("visitLogIn", () => {
+  cy.fixture("login").then((data) => {
+    global.globalThis.data = data
+  })
+})
+
+
+
+
+
+//login
+Cypress.Commands.add("logIn", (username, password) => {
+  cy.fixture("login").then((data) => {
+    global.globalThis.data = data
+  })
+  cy.visit("/index.php?rt=account/login")
+  cy.get(logInLocators.loginName).type(username)
+  cy.get(logInLocators.password).type(password)
+  cy.get(logInLocators.logInBtn).click()
+})
+
+
+
+
 
 // newsletter validation command
 Cypress.Commands.add("newsletterFormValidation", (firstName, lastName, email) => {

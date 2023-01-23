@@ -8,7 +8,7 @@ describe("Main menu tests in home page", () => {
     cy.visitHomePage()
   });
 
-  it.only("Moving through whole main menu and check its guiding us to good categories ", () => {
+  it("Moving through whole main menu and check its guiding us to good categories ", () => {
     homePage.mainNavigationIteration();
   });
 });

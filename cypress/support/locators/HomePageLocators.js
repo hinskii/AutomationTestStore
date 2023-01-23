@@ -22,8 +22,8 @@ const homePageLocators = {
     addProductToCard: '.thumbnail .pricetag .productcart',
     productNewPrice: '.pricenew',
     basketIcon: '.quick_basket',
-    cartPrice: '.cart_total'
-    
+    cartPrice: '.cart_total',
+    newsletterBtn: "#subscribeFrm .btn.btn-orange"
 }
 
 export {homePageLocators}

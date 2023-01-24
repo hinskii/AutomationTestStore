@@ -3,7 +3,7 @@ import { ProductCard } from "../../support/pages/productCardPO/ProductCard";
 
 
 
-describe("Main menu tests in home page", () => {
+describe("Product Card tests", () => {
   const productCard = new ProductCard()
   beforeEach(() => {
     cy.visitCategory()

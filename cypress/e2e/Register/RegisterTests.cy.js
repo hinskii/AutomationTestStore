@@ -1,4 +1,4 @@
-
+/// <reference types="Cypress" />
 import { Register } from "../../support/pages/RegisterPO/Register";
 
 describe('Register tests', () => {

@@ -19,5 +19,6 @@ describe('Account panel tests', () => {
     it('Add new address in account panel test', () => {
         accountPanel.addNewAddress()
     })
+    
 
 })

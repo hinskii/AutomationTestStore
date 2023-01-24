@@ -36,6 +36,8 @@ const addressChange = {
     state: "#AddressFrm_zone_id",
     zipCode: "#AddressFrm_postcode",
     country: "#AddressFrm_country_id",
+    blueIconNumber: ".dash-tile.dash-tile-ocean > .dash-tile-text",
+    badgeIcon: ".badge"
 }
 
 
